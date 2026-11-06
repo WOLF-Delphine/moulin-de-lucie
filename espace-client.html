@@ -3,37 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espace client</title>
+    <title>Le Moulin de Lucie - Espace client</title>
   </head>
   <body>
+     <!---------------------------------------------------------------------------------------------------------------------------------------->
     <header>
+      <!--Logo-->
+      <a href="./index.html">Le Moulin de Lucie</a>
+
+      <!--navigation bar-->
       <nav>
         <ul>
-          <li>Espace client</li>
-          <li>Boutique</li>
-          <li>Commander</li>
-          <li>Catalogue</li>
-          <li>Panier</li>
+          <li><a href="./espace-client.html">Espace client</a></li>
+          <li><a href="./boutique.html">Boutique</a></li>
+          <li><a href="./commande.html">Commander</a></li>
+          <li><a href="./catalogue.html">Catalogue</a></li>
+          <li><a href="./panier.html">Panier</a></li>
         </ul>
       </nav>
     </header>
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
     <main>
+        <!--Main title-->
       <h1>Espace client</h1>
+
+      <!--Form-->
       <form action=" ">
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" />
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" />
-        <button type="button">VALIDER</button>
+        <label for="name">Nom :</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="first-name">Prénom :</label>
+        <input type="text" name="first-name" id="first-name" />
+
+        <label for="year-of-birth">Date de naissance :</label>
+        <input type="number" name="year-of-birth" id="year-of-birth" />
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" id="password" />
+
+        <button type="button">Créer ma carte</button>
       </form>
 
+      <!--loyalty card-->
       <div>
-        <p>Votre carte de fidélité</p>
+        <h2>Ma carte de fidélité</h2>
       </div>
+
+
+
+
     </main>
-    <script src="./script.js"></script>
+
+
+    <footer>
+      <ul>
+        <li><a href="./mentions-legales.html"></a>Mentions Légales</li>
+      </ul>
+    </footer>
+
+    <script src="./javascript/espace-client.js"></script>
   </body>
-  <footer>
-    
-  </footer>
 </html>
