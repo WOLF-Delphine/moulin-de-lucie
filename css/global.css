@@ -1,0 +1,57 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES */
+/*design tockens**/
+:root {
+  --color-olive: #556b2f;
+  --color-olive-fonce: #3b4a1f;
+  --color-noir-olive: #2b2a26;
+  --color-creme: #f7f2e7;
+  --color-ocre: #c8892b;
+  --color-terre-cuite: #a8452f;
+  --color-blanc: #ffffff;
+
+  /*Font CSS*/
+  /*Font size CSS*/
+  --font-h1: 48px;
+  --font-h2: 32px;
+  --font-h3: 24px;
+  --font-text: 18px;
+  --font-small: 14px;
+
+  /*Espacement /arrondi et ombre*/
+  --button-corner: 8px;
+}
+/*CSS*/
+.menu {
+  padding: 16px;
+}
+header {
+  background: var(--color-olive);
+}
+nav {
+  position: sticky;
+}
+h1 {
+  font-size: var(--font-h1);
+}
+h2 {
+  font-size: var(--font-h2);
+  margin: 20px;
+}
+h3 {
+  font-size: var(--font-h3);
+}
+.liste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+

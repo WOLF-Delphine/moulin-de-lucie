@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Moulin de Lucie - Accueil</title>
+    <link rel="stylesheet" href="./css/global.css">
   </head>
 
   <!------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -17,13 +18,14 @@
       <!--MANQUE LE LOGO-->
 
       <!--Start of the navigation bar-->
-      <nav>
-        <ul>
-          <li><a href="./espace-client.html">Espace client</a></li>
+      <nav class="menu">
+        <button type="button"><img src="./icons/square-menu.svg" alt="Ouvrir le menu"></button>
+        <ul class="liste">
+          <li><a href="./espace-client.html"><img src="./icons/circle-user-round.svg" alt="">Espace client</a></li>
           <li><a href="./boutique.html">Boutique</a></li>
           <li><a href="./commande.html">Commander</a></li>
           <li><a href="./catalogue.html">Catalogue</a></li>
-          <li><a href="./panier.html">Panier</a></li>
+          <li><a href="./panier.html"><img src="./icons/shopping-basket.svg" alt="">Panier</a></li>
         </ul>
       </nav>
       <!--End of the navigation bar-->
@@ -54,7 +56,7 @@
 
       <!------------------------------------------------------------------------------------------------------------------------------------------------>
       <!--Start section : Our history-->
-      <section>
+      <section class="histoire">
         <h2>Notre histoire</h2>
 
         <p>
@@ -72,8 +74,10 @@
           — Lucie
         </p>
 
-        <img src="" alt="Lucie au moulin" />
-        <!-- TODO : MANQUE UNE PHOTO-->
+        <img class="lucie"
+          src="./images/lucie-oliveraie.webp"
+          alt="Lucie au milieu des oliviers de la famille."
+        />
       </section>
       <!--End section : Our history-->
 
@@ -151,6 +155,8 @@
         <p>Horaires : du mardi au samedi, 10 h et 15 h, sur réservation</p>
         <p>Dégustation : la liqueur d'olive est réservée aux adultes</p>
         <a href="./commande.html">Réserver une visite </a>
+
+        <img src="./images/moulin.webp" alt="La meule en pierre de 1952" />
       </section>
       <!--End section : the visit to the mill--->
 
@@ -240,9 +246,12 @@
           Mettez tous les ingrédients dans le mixeur et mixez pendant 3 minutes,
           en raclant les bords à mi-parcours. Servez sur du pain grillé.
         </p>
-        <div>
-          <!-- TODO : MINUTEUR A FAIRE-->
-        </div>
+        <button type="button">Démarrer</button>
+        <button type="button">Pause</button>
+        <button type="button">Réinitialiser</button>
+
+        <!-- TODO : MINUTEUR A FAIRE-->
+        <div>03:00</div>
       </section>
       <!--End section of recipe-->
 
@@ -310,6 +319,15 @@
         <p>
           Devinez le prix de notre panier garni surprise, entre 1 et 100 € !
         </p>
+        <form>
+          <label for="name">Votre prénom :</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="price">Votre prix (en €) :</label>
+          <input type="number" name="price" id="price" min="1" max="100"/>
+          <button type="button">Proposer</button>
+        </form>
+        <p>À vous de jouer !</p>
       </section>
       <!--End of the game-->
 
@@ -319,8 +337,19 @@
     <!------------------------------------------------------------------------------------------------------------------------------------------------>
     <!--Start of the Footer-->
     <footer>
+      <p>
+        La boutique : du mardi au samedi, 9h-12h30 et 14h-18h30.
+      </p>
+      <p>Visites : du mardi au samedi à 10h et à 15h, sur réservation </p>
+      <p>
+        Adresse : 12 chemin des Meules, 34999 Les Oliviers-sur-Orb (Hérault)
+      </p>
       <ul>
-        <li><a href="./mentions-legales.html"></a>Mentions Légales</li>
+        <li><a href="./mentions-legales.html">Mentions légales</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="./icons/facebook-brands-solid-full.svg" alt="Facebook du Moulin de Lucie"></a></li>
+        <li><a href="#"><img src="./icons/instagram-brands-solid-full.svg" alt="Instagram du Moulin de Lucie"></a></li>
       </ul>
     </footer>
     <!--End of the Footer-->

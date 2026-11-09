@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Moulin de Lucie - Espace client</title>
+    <link rel="stylesheet" href="./css/global.css">
   </head>
   <body>
      <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Start of the Header-->
     <header>
       <!--Logo-->
       <a href="./index.html">Le Moulin de Lucie</a>
+      <!--MANQUE LE LOGO-->
 
-      <!--navigation bar-->
-      <nav>
-        <ul>
-          <li><a href="./espace-client.html">Espace client</a></li>
+      <!--Start of the navigation bar-->
+      <nav class="menu">
+        <button type="button"><img src="./icons/square-menu.svg" alt="Ouvrir le menu"></button>
+        <ul class="liste">
+          <li><a href="./espace-client.html"><img src="./icons/circle-user-round.svg" alt="">Espace client</a></li>
           <li><a href="./boutique.html">Boutique</a></li>
           <li><a href="./commande.html">Commander</a></li>
           <li><a href="./catalogue.html">Catalogue</a></li>
-          <li><a href="./panier.html">Panier</a></li>
+          <li><a href="./panier.html"><img src="./icons/shopping-basket.svg" alt="">Panier</a></li>
         </ul>
       </nav>
+      <!--End of the navigation bar-->
     </header>
+    <!--End of the Header-->
+
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
     <main>
@@ -56,12 +63,27 @@
     </main>
 
 
+     <!--Start of the Footer-->
     <footer>
+      <p>
+        La boutique : du mardi au samedi, 9h-12h30 et 14h-18h30.
+      </p>
+      <p>Visites : du mardi au samedi à 10h et à 15h, sur réservation </p>
+      <p>
+        Adresse : 12 chemin des Meules, 34999 Les Oliviers-sur-Orb (Hérault)
+      </p>
       <ul>
-        <li><a href="./mentions-legales.html"></a>Mentions Légales</li>
+        <li><a href="./mentions-legales.html">Mentions légales</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="./icons/facebook-brands-solid-full.svg" alt="Facebook du Moulin de Lucie"></a></li>
+        <li><a href="#"><img src="./icons/instagram-brands-solid-full.svg" alt="Instagram du Moulin de Lucie"></a></li>
       </ul>
     </footer>
-
+    <!--End of the Footer-->
+    <!------------------------------------------------------------------------------------------------------------------------------------------------>
+    <!--Script Js-->
     <script src="./javascript/espace-client.js"></script>
   </body>
+  <!--End of the Body-->
 </html>
