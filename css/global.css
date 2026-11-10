@@ -27,31 +27,136 @@
   /*Espacement /arrondi et ombre*/
   --button-corner: 8px;
 }
+
 /*CSS*/
-.menu {
+/*HEADER*/
+header {
+  background: var(--color-terre-cuite);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 16px;
 }
-header {
-  background: var(--color-olive);
+header a {
+  text-decoration: none;
+  color: var(--color-blanc);
 }
-nav {
-  position: sticky;
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
 }
-h1 {
-  font-size: var(--font-h1);
+.menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-h2 {
-  font-size: var(--font-h2);
-  margin: 20px;
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-h3 {
-  font-size: var(--font-h3);
+nav img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
 }
 .liste {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
+  justify-content: space-evenly;
+  gap: 32px;
   list-style: none;
+  flex: 1;
+}
+.hero {
+  display: flex;
+  flex-direction: column; /* les enfants s'empilent de haut en bas */
+  align-items: center; /* et ils sont centrés horizontalement */
+  gap: 24px; /* espace entre la photo, le titre, le texte et les boutons */
+  padding: 0 0 48px; /* de l'air sous la section */
+  text-align: center; /* le texte des paragraphes est centré */
+}
+
+.hero img {
+  width: 100%; /* la photo prend toute la largeur */
+  height: 400px; /* mais on limite sa hauteur */
+  object-fit: cover; /* elle est recadrée au lieu d'être écrasée */
+}
+
+.hero p {
+  max-width: 700px; /* le paragraphe ne s'étale pas sur tout l'écran */
+  padding: 0 16px; /* un peu d'air sur les côtés, pour le téléphone */
+}
+.hero a {
+  text-decoration: none;
+  color: var(--color-blanc);
+  background-color: var(--color-olive-fonce);
+  padding:16px;
+  border-radius: var(--button-corner);
+}
+.btn-hero{
+  display: flex;
+ align-items: center;
+ gap: 32px;
+}
+
+/*MAIN*/
+h1 {
+  font-size: var(--font-h1);
+  text-align: center;
+}
+.history h2 {
+  font-size: var(--font-h2);
+  color: var(--color-olive-fonce);  /* titre dans le vert de la marque */
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: var(--font-h3);
+}
+
+/*SECTION NOTRE HISTOIRE*/
+/* Boîte extérieure : le décor (fond sur toute la largeur) */
+.history {
+  background-color: var(--color-creme);
+  padding: 64px 16px;
+}
+/* Boîte intérieure : la mise en page (texte à côté de la photo) */
+.history-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;          /* plus d'air entre le texte et la photo */
+  max-width: 1280px;  /* moins de vide sur les côtés */
+  margin: 0 auto;
+}
+.history-text{
+  flex: 1;
+}
+.history p{
+  font-size: var(--font-text);
+  line-height: 1.7;   /* lignes plus espacées : plus agréable à lire */
+  color: var(--color-noir-olive);
+  margin-bottom: 16px;
+}
+.lucie{
+  width: 50%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: var(--button-corner);              /* coins arrondis */
+  box-shadow: 0 12px 32px rgba(43, 42, 38, 0.18);   /* ombre douce */
+}
+
+footer img{
+  width: 24px;
+  height: 24px;
+}
+/*BOUTON BURGER*/
+@media (min-width: 768px) {
+  .menu button {
+    display: none;
+  }
 }
 
