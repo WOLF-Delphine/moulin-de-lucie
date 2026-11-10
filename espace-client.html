@@ -41,34 +41,70 @@
     <!--End of the Header-->
 
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
-
+    <!--Main title-->
     <main>
-      <!--Main title-->
-      <div class="user">
-        <h1>Espace client</h1>
-        <p>Créer votre carte de fidélité et profitez de nos avantages</p>
-      </div>
-      <!--Form-->
-      <form action=" ">
-        <label for="name">Nom :</label>
-        <input type="text" name="name" id="name" />
+      <section class="section-user">
+        <div class="user">
+          <h1>Espace client</h1>
+          <p>Créer votre carte de fidélité et profitez de nos avantages</p>
+        </div>
 
-        <label for="first-name">Prénom :</label>
-        <input type="text" name="first-name" id="first-name" />
+        <!--Tabs-->
+        <div class="tab">
+          <button type="button">Ma carte</button>
+          <button type="button">Mes préférences</button>
+        </div>
 
-        <label for="year-of-birth">Date de naissance :</label>
-        <input type="number" name="year-of-birth" id="year-of-birth" />
+        <div class="panel-card">
+          <!--Form-->
+          <form action=" " class="form">
+            <label for="name">Nom :</label>
+            <input type="text" name="name" id="name" />
 
-        <label for="password">Mot de passe :</label>
-        <input type="password" name="password" id="password" />
+            <label for="first-name">Prénom :</label>
+            <input type="text" name="first-name" id="first-name" />
 
-        <button type="button">Créer ma carte</button>
-      </form>
+            <label for="year-of-birth">Année de naissance :</label>
+            <input type="number" name="year-of-birth" id="year-of-birth" />
 
-      <!--loyalty card-->
-      <div>
-        <h2>Ma carte de fidélité</h2>
-      </div>
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" />
+
+            <button type="button">Créer ma carte</button>
+          </form>
+
+          <!--loyalty card-->
+
+          <h2>Ma carte de fidélité</h2>
+          <div class="card">
+            <!--TODO : a fait office de logo pour le moment-->
+            <a href="./index.html">Le Moulin de Lucie</a>
+            <p>Bonjour <span>Marie</span></p>
+            <p><span>Marie, DUPONT, 34 ans</span></p>
+            <p>Numéro <span>DUP-6-T</span></p>
+            <p><span>M.D</span></p>
+          </div>
+        </div>
+        <div class="panel-preferences">
+          <h2>Mes préférences</h2>
+          <fieldset>
+            <p>taille du texte</p>
+            <input type="radio" name="text" id="size-S" />
+            <label for="size">Petite</label>
+            <input type="radio" name="text" id="size-M" />
+            <label for="size">Moyenne</label>
+            <input type="radio" name="text" id="size-L" />
+            <label for="size">Grande</label>
+          </fieldset>
+          <fieldset>
+            <p>Thème</p>
+            <input type="radio" name="theme" id="dark-mode" />
+            <label for="theme">Thème sombre</label>
+            <input type="radio" name="theme" id="light-mode" />
+            <label for="theme">Thème clair</label>
+          </fieldset>
+        </div>
+      </section>
     </main>
 
     <!--Start of the Footer-->
