@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%; /* jamais plus large que sa boîte */
+  height: auto;
+  display: block;
+}
+
 /*VARIABLES */
 /*design tockens**/
 :root {
@@ -31,7 +37,7 @@
 /*CSS*/
 /*HEADER*/
 header {
-  background: var(--color-terre-cuite);
+  background: var(--color-olive-fonce);
   position: sticky;
   top: 0;
   display: flex;
@@ -41,7 +47,7 @@ header {
 }
 header a {
   text-decoration: none;
-  color: var(--color-blanc);
+  color: var(--color-creme);
 }
 .menu {
   display: flex;
@@ -79,6 +85,7 @@ nav img {
   gap: 24px; /* espace entre la photo, le titre, le texte et les boutons */
   padding: 0 0 48px; /* de l'air sous la section */
   text-align: center; /* le texte des paragraphes est centré */
+  background-color: var(--color-olive);
 }
 
 .hero img {
@@ -93,101 +100,95 @@ nav img {
 }
 .hero a {
   text-decoration: none;
-  color: var(--color-blanc);
+  color: var(--color-creme);
   background-color: var(--color-olive-fonce);
-  padding:16px;
+  padding: 16px;
   border-radius: var(--button-corner);
 }
-.btn-hero{
+.btn-hero {
   display: flex;
- align-items: center;
- gap: 32px;
+  align-items: center;
+  gap: 32px;
 }
 
 /*MAIN*/
+
 h1 {
   font-size: var(--font-h1);
   text-align: center;
+  color: var(--color-creme);
 }
-.history h2 {
+/*SECTION NOTRE HISTOIRE*/
+.story h2 {
   font-size: var(--font-h2);
-  color: var(--color-olive-fonce);  /* titre dans le vert de la marque */
+  color: var(--color-olive); /* titre dans le vert de la marque */
   margin-bottom: 24px;
 }
 h3 {
   font-size: var(--font-h3);
 }
 
-/*SECTION NOTRE HISTOIRE*/
 /* Boîte extérieure : le décor (fond sur toute la largeur) */
-.history {
+.story {
   background-color: var(--color-creme);
   padding: 64px 16px;
 }
 /* Boîte intérieure : la mise en page (texte à côté de la photo) */
-.history-content {
+.story-content {
   display: flex;
   align-items: center;
-  gap: 80px;          /* plus d'air entre le texte et la photo */
-  max-width: 1280px;  /* moins de vide sur les côtés */
+  gap: 80px; /* plus d'air entre le texte et la photo */
+  max-width: 1280px; /* moins de vide sur les côtés */
   margin: 0 auto;
 }
-.history-text{
+.story-text {
   flex: 1;
 }
-.history p{
+.story-text p:last-child{
+margin-bottom: 0;
+}
+.story p {
   font-size: var(--font-text);
-  line-height: 1.7;   /* lignes plus espacées : plus agréable à lire */
+  line-height: 1.7; /* lignes plus espacées : plus agréable à lire */
   color: var(--color-noir-olive);
   margin-bottom: 16px;
 }
-.lucie{
+.lucie {
   width: 50%;
   height: 460px;
   object-fit: cover;
-  border-radius: var(--button-corner);              /* coins arrondis */
-  box-shadow: 0 12px 32px rgba(43, 42, 38, 0.18);   /* ombre douce */
+  border-radius: var(--button-corner); /* coins arrondis */
+  box-shadow: 0 12px 32px rgba(43, 42, 38, 0.18); /* ombre douce */
 }
-footer{
-  background-color: var(--color-terre-cuite);
+footer {
+  background-color: var(--color-olive);
 }
-footer img{
+footer img {
   width: 24px;
   height: 24px;
 }
 
-
-
-
-
-
-
-
 /*ESPACE CLIENT*/
 
-.section-user{
-
- 
-}
-.tab{
+.tab {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.form{
+.form {
   display: flex;
   flex-direction: column;
   padding: 18px;
   margin-bottom: 32px;
 }
-.user{
+.user {
   text-align: center;
 }
-.card{
+.card {
   background-color: var(--color-noir-olive);
   padding: 18px;
 }
-.card a{
+.card a {
   text-decoration: none;
   color: var(--color-blanc);
 }
@@ -198,4 +199,39 @@ footer img{
     display: none;
   }
 }
+/*NOS PRODUITS PHARES*/
+.article {
+  background-color: var(--color-creme);
+  padding: 32px;
+  border-radius: 8px;
 
+  padding: 64px 16px;
+}
+.galerie {
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+}
+
+.article a {
+  text-decoration: none;
+  color: var(--color-noir-olive);
+}
+.article h2 {
+  text-align: center;
+}
+.galerie article {
+  flex: 1; /* les 3 cartes prennent chacune 1 part égale */
+}
+.galerie img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-shop {
+  background-color: var(--color-blanc);
+  padding: 18px;
+  border-radius: 8px;
+  padding-bottom: 18px;
+}

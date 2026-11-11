@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Moulin de Lucie - La boutique</title>
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
     <!---------------------------------------------------------------------------------------------------------------------------------------->
@@ -17,13 +16,24 @@
 
       <!--Start of the navigation bar-->
       <nav class="menu">
-        <button type="button"><img src="./icons/square-menu.svg" alt="Ouvrir le menu"></button>
+        <button type="button">
+          <img src="./icons/square-menu.svg" alt="Ouvrir le menu" />
+        </button>
         <ul class="liste">
-          <li><a href="./espace-client.html"><img src="./icons/circle-user-round.svg" alt="">Espace client</a></li>
+          <li>
+            <a href="./espace-client.html"
+              ><img src="./icons/circle-user-round.svg" alt="" />Espace
+              client</a
+            >
+          </li>
           <li><a href="./boutique.html">Boutique</a></li>
           <li><a href="./commande.html">Commander</a></li>
           <li><a href="./catalogue.html">Catalogue</a></li>
-          <li><a href="./panier.html"><img src="./icons/shopping-basket.svg" alt="">Panier</a></li>
+          <li>
+            <a href="./panier.html"
+              ><img src="./icons/shopping-basket.svg" alt="" />Panier</a
+            >
+          </li>
         </ul>
       </nav>
       <!--End of the navigation bar-->
@@ -32,16 +42,100 @@
 
     <!--------------------------------------------------------------------------------------------------------------------------------------------->
     <main>
-      <!--Main title-->
-      <h1>La boutique</h1>
+    
+      <section class="shop">
+
+        <h1>La boutique</h1>
+        <p>Tous nos produits sont préparés au moulin, en petites quantités.</p>
+      <!--Pub frieze-->
+        <p class="frieze" aria-hidden="true"></p>
+        
+        <!--Pub message-->
+        <div class="message">
+          <p>Soldes: -20% sur tous nos produits !</p>
+        </div>
+
+      <!--Product cards-->
+      <div class="card-product">
+        <img src="./images/pot-tapenade-noire.webp" alt="Pot de tapenade noire" />
+        <h2>Tapenade noire</h2>
+        <p><span>6,00</span>€</p>
+        <p class="solde"><span>4,80</span>€</p>
+        <p>Allergénes :<span>fruits à coques, (amandes)</span></p>
+        <label for="quantity-black-tapenade">Quantité</label>
+        <input type="number" name="quantity-black-tapenade" id="quantity-black-tapenade" min="1" value="1" />
+        
+        <button type="button">Calculer</button>
+      
+
+        <div>
+          <p><span>3</span>*<span>6,00</span>€ = <span>18,00</span>€</p>
+        </div>
+
+        
+      
+        <img src="./images/pot-tapenade-verte.webp" alt="Pot de tapenade verte" />
+        <h2>Tapenade verte</h2>
+        <p><span>6,00</span>€</p>
+        <p class="solde"><span>4,80</span>€</p>
+        <p>Allergénes :<span>fruits à coques, (amandes)</span></p>
+      <label for="quantity-black-tapenade">Quantité</label>
+      <input type="number" name="quantity-black-tapenade" id="quantity-black-tapenade" min="1" value="1" />
+        
+        <button type="button">Calculer</button>
+   
+
+          <p><span>3</span>*<span>6,00</span>€ = <span>18,00</span>€</p>
+        </div>
+    </section>
+    
+
+
+
+
+<section class="box">
+      <h2>Les cartons d'expédition</h2>
+      <p>Combien de cartons pour votre commande ? (6 bocaux par carton)</p>
+      </section>
+
+<section class="label">
+      <h2>Personnalisez l'étiquette de votre coffret cadeau</h2>
+      <label for="width">Largeur</label>
+      <input type="number" name="largeur" id="width-label" />
+
+      <label for="height">Hauteur</label>
+      <input type="number" name="hauteur" id="height-label" />
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <!------------------------------------------------------------------------------------------------------------------------------------------->
-     <!--Start of the Footer-->
+    <!--Start of the Footer-->
     <footer>
-      <p>
-        La boutique : du mardi au samedi, 9 h - 12 h 30 et 14 h - 18 h 30.
-      </p>
-      <p>Visites : du mardi au samedi à 10h et à 15h, sur réservation </p>
+      <p>La boutique : du mardi au samedi, 9 h - 12 h 30 et 14 h - 18 h 30.</p>
+      <p>Visites : du mardi au samedi à 10h et à 15h, sur réservation</p>
       <p>
         Adresse : 12 chemin des Meules, 34999 Les Oliviers-sur-Orb (Hérault)
       </p>
@@ -49,8 +143,20 @@
         <li><a href="./mentions-legales.html">Mentions légales</a></li>
       </ul>
       <ul>
-        <li><a href="#"><img src="./icons/facebook-brands-solid-full.svg" alt="Facebook du Moulin de Lucie"></a></li>
-        <li><a href="#"><img src="./icons/instagram-brands-solid-full.svg" alt="Instagram du Moulin de Lucie"></a></li>
+        <li>
+          <a href="#"
+            ><img
+              src="./icons/facebook-brands-solid-full.svg"
+              alt="Facebook du Moulin de Lucie"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./icons/instagram-brands-solid-full.svg"
+              alt="Instagram du Moulin de Lucie"
+          /></a>
+        </li>
       </ul>
     </footer>
     <!--End of the Footer-->
