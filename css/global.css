@@ -97,6 +97,7 @@ nav img {
 .hero p {
   max-width: 700px; /* le paragraphe ne s'étale pas sur tout l'écran */
   padding: 0 16px; /* un peu d'air sur les côtés, pour le téléphone */
+  margin: 0 auto;/*Centre le bloc: l'espace qui reste est partagé à gauche et a droite*/
 }
 .hero a {
   text-decoration: none;
@@ -108,6 +109,7 @@ nav img {
 .btn-hero {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
 }
 
