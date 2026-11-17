@@ -1,0 +1,77 @@
+/*Hero de l'index.html----------------------------------------------------------------------*/
+.hero {
+  display: flex;
+  flex-direction: column; /* les enfants s'empilent de haut en bas */
+  align-items: center; /* et ils sont centrés horizontalement */
+  gap: 24px; /* espace entre la photo, le titre, le texte et les boutons */
+  padding: 0 0 48px; /* de l'air sous la section */
+  text-align: center; /* le texte des paragraphes est centré */
+  background-color: var(--color-olive);
+}
+
+.hero img {
+  width: 100%; /* la photo prend toute la largeur */
+  height: 400px; /* mais on limite sa hauteur */
+  object-fit: cover; /* elle est recadrée au lieu d'être écrasée */
+}
+
+.hero p {
+  max-width: 500px; /* le paragraphe ne s'étale pas sur tout l'écran */
+  padding: 0 16px; /* un peu d'air sur les côtés, pour le téléphone */
+  margin: 0 auto; /*Centre le bloc: l'espace qui reste est partagé à gauche et a droite*/
+}
+.hero a {
+  text-decoration: none;
+  color: var(--color-creme);
+  background-color: var(--color-olive-fonce);
+  padding: 16px;
+  border-radius: var(--button-corner);
+}
+
+/*SECTION NOTRE HISTOIRE*/
+.story h2 {
+  font-size: var(--font-h2);
+  color: var(--color-olive); /* titre dans le vert de la marque */
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: var(--font-h3);
+}
+
+/* Boîte extérieure : le décor (fond sur toute la largeur) */
+.story {
+  background-color: var(--color-creme);
+  padding: 64px 16px;
+}
+/* Boîte intérieure : la mise en page (texte à côté de la photo) */
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: 80px; /* plus d'air entre le texte et la photo */
+  max-width: 1280px; /* moins de vide sur les côtés */
+  margin: 0 auto;
+}
+.story-text {
+  flex: 1;
+}
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+.story p {
+  font-size: var(--font-text);
+  line-height: 1.7; /* lignes plus espacées : plus agréable à lire */
+  color: var(--color-noir-olive);
+  margin-bottom: 16px;
+}
+.lucie {
+  width: 50%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: var(--button-corner); /* coins arrondis */
+  box-shadow: 0 12px 32px rgba(43, 42, 38, 0.18); /* ombre douce */
+}
+h1 {
+  font-size: var(--font-h1);
+  text-align: center;
+  color: var(--color-noir-olive);
+}

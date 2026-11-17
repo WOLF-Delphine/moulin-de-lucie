@@ -1,0 +1,58 @@
+/*ESPACE CLIENT*/
+
+.tab {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  margin-bottom: 32px;
+}
+.user {
+  text-align: center;
+}
+.card {
+  background-color: var(--color-noir-olive);
+  padding: 18px;
+}
+.card a {
+  text-decoration: none;
+  color: var(--color-blanc);
+}
+
+/*NOS PRODUITS PHARES*/
+.article {
+  background-color: var(--color-creme);
+  border-radius: var(--button-corner);
+  padding: 64px 16px;
+}
+.galerie {
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+}
+
+.article a {
+  text-decoration: none;
+  color: var(--color-noir-olive);
+}
+.article h2 {
+  text-align: center;
+}
+.galerie article {
+  flex: 1; /* les 3 cartes prennent chacune 1 part égale */
+}
+.galerie img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: var(--button-corner);
+}
+.product-shop {
+  background-color: var(--color-blanc);
+  padding: 18px;
+  border-radius: var(--button-corner);
+}
